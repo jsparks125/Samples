@@ -12,8 +12,6 @@ include("MT_Events.lua")
 include("IconSupport")
 include("InstanceManager")
 
-print("AncientRuins.lua loaded")
-
 local resourceManager = InstanceManager:new("AROverlayResourceInstance", "Anchor", Controls.AROverlayResourceContainer)
 local resourceInstances = {}
 local width, height
@@ -46,11 +44,8 @@ function Init()
 		for j=0,height-1,1 do
 			local pPlot = Map.GetPlot(i, j)
 			if pPlot:IsGoody() then
-				print("Found Ancient Ruins at: " .. i .. "," .. j)
 				ruinsPlots[ruinsPlotIndex] = {i, j, 0}
 				ruinsPlotIndex = ruinsPlotIndex+1
-				--pPlot:SetRevealed(pPlayer:GetTeam(), true)
-				--pPlot:UpdateFog()
 			end
 		end
 	end
@@ -65,7 +60,6 @@ function Init()
 				-- Get difficulty setting
 				for row in DB.Query("SELECT Type FROM HandicapInfos WHERE ID=" .. Game.GetHandicapType()) do
 					handicapType = row.Type
-					print("Difficulty setting: " .. handicapType)
 				end
 				-- Initialize reward tracker array
 				for row in DB.Query("SELECT ID FROM AncientRuinsRewards") do
@@ -87,10 +81,8 @@ function Init()
 								end
 							end
 						end
-						print("rewardTracker PlayerID " .. id .. " rewardID " .. row.ID .. " " .. rewardTracker[id][row.ID])
 					end
 				end
-				print("rewardCount: " .. rewardCount)
 			end
 		end
 	end
@@ -123,7 +115,6 @@ Events.LoadScreenClose.Add(Init)
 function HandleRuin(player, unit, x, y)
 	-- Exit if all ruins have been explored
 	if ruinsExplored == ruinsPlotIndex then
-		--print("All ruins explored")
 		return
 	end
 	local pPlayer = Players[player]
@@ -147,11 +138,8 @@ function HandleRuin(player, unit, x, y)
 
 				-- On ruins and ruins plot is unexplored
 				if ruinsx == uX and ruinsy == uY and ruinsPlots[index][3] == 0 then
-					print("Player " .. player .. " unit is on ruins at: " .. ruinsx .. "," .. ruinsy)
-
 					-- If unit has the pathfinder promotion and the unit belongs to the active player, use choose reward code
 					if uUnit:IsHasPromotion(pathfinderID) and player == aPlayerID then
-						print("Pathfinder unit " .. unit)
 						local rewardAvailable = false
 						-- Check to see if any rewards are still available
 						for iReward,vReward in ipairs(rewardTracker[player]) do
@@ -186,7 +174,6 @@ function HandleRuin(player, unit, x, y)
 							Data1 = player,
 							Data2 = unit
 							}
-						print("ChooseGoodyHut popupInfo: " .. ButtonPopupTypes.BUTTONPOPUP_CHOOSE_GOODY_HUT_REWARD .. " " .. popupInfo.Data1 .. " " .. popupInfo.Data2)
 						Events.SerialEventGameMessagePopup(popupInfo)
 					else
 						-- Non-pathfinder unit/pathfinder unit but not active player runs random reward code
@@ -221,8 +208,6 @@ GameEvents.UnitSetXY.Add(HandleRuin)
 -- Handles custom Lua event called by GoodyChooseHutReward when a reward is chosen
 function HandleRewardChosen(pPlayer, uUnit, uPlot, rewardType)
 	local rewardID
-	print("RewardChosen for player " .. pPlayer:GetID() .. " unit " .. uUnit:GetName() .. " plot " .. uPlot:GetX() .. "," .. uPlot:GetY() .. " " .. rewardType)
-
 	for row in DB.Query("SELECT ID FROM AncientRuinsRewards WHERE Type='" .. rewardType .. "'") do
 		rewardID = row.ID
 	end
@@ -330,7 +315,6 @@ function CanReceiveReward(pPlayer, uUnit, uPlot, rewardType)
 			local defaultUnit = GameInfo.UnitClasses{Type=upgradeClass}().DefaultUnit
 			local unitTech = GameInfo.Units{Type=defaultUnit}().PrereqTech
 			local techEra = GameInfo.Technologies{Type=unitTech}().Era
-			print(defaultUnit .. " " .. unitTech .. " " .. techEra)
 			if (techEra ~= "ERA_ANCIENT" and techEra ~= "ERA_CLASSICAL") then
 				return false
 			end
@@ -797,7 +781,6 @@ function RewardRevealResource(pPlayer, uPlot)
 			end
 		end
 		if (resourcesChecked == resourceIndex) then
-			print("Didn't find any resources")
 			return false
 		end
 	end
@@ -1004,7 +987,6 @@ function GetRewardType(playerID)
 	local rewardGiven = false
 	while not rewardGiven do
 		local rewardIndex = availableRewards[math.random(numAvailable)-1]
-		print("GetRewardType playerID " .. playerID .. " rewardIndex " .. rewardIndex)
 		if rewardTracker[playerID][rewardIndex] == 0 or rewardTracker[playerID][rewardIndex] == 2 then
 			rewardTracker[playerID][rewardIndex] = 1
 			db.SetValue("savedReward" .. playerID .. "," .. rewardIndex, 1)
