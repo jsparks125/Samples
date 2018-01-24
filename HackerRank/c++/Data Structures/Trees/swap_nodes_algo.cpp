@@ -8,11 +8,11 @@
 struct node
 {
 	int data;
-	node *left;
-	node *right;
+	node* left;
+	node* right;
 };
 
-void InorderTraversal(node *root)
+void InorderTraversal(node* root)
 {
 	if (root != nullptr)
 	{
@@ -22,7 +22,7 @@ void InorderTraversal(node *root)
 	}
 }
 
-void SwapNodes(node *root, int nodeLevel)
+void SwapNodes(node* root, int nodeLevel)
 {
 	int current_level = 1;
 	std::queue<node*> current_queue;
@@ -32,12 +32,12 @@ void SwapNodes(node *root, int nodeLevel)
 		std::queue<node*> next_queue;
 		while (!current_queue.empty())
 		{
-			node *current_node = current_queue.front();
+			node* current_node = current_queue.front();
 			current_queue.pop();
 
 			if (current_level % nodeLevel == 0)
 			{
-				node *prev_left = current_node->left;
+				node* prev_left = current_node->left;
 				current_node->left = current_node->right;
 				current_node->right = prev_left;
 			}
@@ -56,7 +56,7 @@ int SwapNodesAlgo()
 {
 	std::queue<node*> node_queue;
 	int num_nodes, left_node, right_node, num_swaps;
-	node *top = new node();
+	node* top = new node();
 	top->data = 1;
 	node_queue.push(top);
 
@@ -64,7 +64,7 @@ int SwapNodesAlgo()
 	for (int i = 0; i < num_nodes; i++)
 	{
 		std::cin >> left_node >> right_node;
-		node *current = node_queue.front();
+		node* current = node_queue.front();
 		node_queue.pop();
 		if (left_node > 0)
 		{

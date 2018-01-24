@@ -24,9 +24,9 @@ struct node
 {
 	int value;
 	int depth;
-	node *parent;
+	node* parent;
 
-	node(int v, int d, node *p)
+	node(int v, int d, node* p)
 	{
 		value = v;
 		depth = d;
@@ -92,7 +92,7 @@ int KittyCalculations()
 	{
 		parent_node = it->first;
 		child_node = it->second;
-		node *parent = &nodes[parent_node];
+		node* parent = &nodes[parent_node];
 		int parent_depth = parent->depth;
 		int current_depth = parent_depth + 1;
 
@@ -169,12 +169,12 @@ int KittyCalculations()
 					node current_node = root_iter->second;
 					if (current_node.parent == nullptr)
 						break;
-					node *parent_node = current_node.parent;
+					node* parent_node = current_node.parent;
 
 					auto parent_iter = nodes_by_depth[j - 1].find(current_node.parent->value);
 					if (parent_iter != nodes_by_depth[j - 1].end())
 					{
-						subtree *next_root_subtree;
+						subtree* next_root_subtree;
 						auto next_iter = subtrees.find(parent_iter->second.value);
 						if (next_iter != subtrees.end())
 							next_root_subtree = &next_iter->second;
