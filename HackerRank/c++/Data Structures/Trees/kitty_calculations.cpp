@@ -1,3 +1,8 @@
+//https://www.hackerrank.com/challenges/kittys-calculations-on-a-tree/problem
+//This is my fully passing solution to the above HackerRank challenge
+//Only 7% of the 750 people who submitted a solution have fully passed, so I'm fairly proud of this one
+//More samples available at https://github.com/jsparks125/Samples
+
 #include <chrono>
 #include <cmath>
 #include <cstdio>
@@ -126,13 +131,13 @@ int KittyCalculations()
 				nodes_by_depth[current_depth][current_node.value] = current_node;
 			}
 
-			//Start at the bottom of the tree and work upward, combining nodes as they hit their common ancestor.
+			//Start at the bottom of the tree and work upward, combining nodes as they hit their common ancestor
 			for (int j = subtree_max_depth; j > 0; j--)
 			{
 				auto process_roots = nodes_by_depth.find(j);
 
-				//We can easily shift a node up as long as it is the only node at its current level and there are no nodes directly above it.
-				//This alleviates quite a bit of processing on very deep trees.
+				//We can easily shift a node up as long as it is the only node at its current level and there are no nodes directly above it
+				//This alleviates quite a bit of processing on very deep trees
 				if (process_roots->second.size() == 1)
 				{
 					auto next_roots_iter = nodes_by_depth.find(j - 1);
@@ -157,7 +162,7 @@ int KittyCalculations()
 					}
 				}
 
-				//Check all of the roots at the current level to see if they have a common ancestor or if their parent exists at the next level.
+				//Check all of the roots at the current level to see if they have a common ancestor or if their parent exists at the next level
 				//If so, they can be combined.
 				for (auto root_iter = process_roots->second.begin(); root_iter != process_roots->second.end(); ++root_iter)
 				{

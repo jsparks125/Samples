@@ -1,3 +1,8 @@
+-- http://steamcommunity.com/sharedfiles/filedetails/?id=431922378
+-- The main lua file from my most popular Civilization V mod (over 7700 subscribers)
+-- More samples available at https://github.com/jsparks125/Samples
+-- Full Civ V mod workshop at http://steamcommunity.com/id/monju125/myworkshopfiles/?appid=8930
+
 -- AncientRuins
 -- Author: monju125
 -- DateCreated: 4/15/2015 4:32:49 PM
