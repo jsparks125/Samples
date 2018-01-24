@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="8f9c054c-7248-410b-8c46-0445614fc63c" version="1">
+  <Properties>
+    <Name>Aeon GameSpeed</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>New GameSpeed increasing each era to ~200 turns but with lower cost of training units and constructing buildings</Teaser>
+    <Description>New GameSpeed that attempts to extend each era to approximately 200 turns but lowers the cost of training units and constructing buildings (except World Wonders). Inspired by the Extended Eras mod, this mod attempts to address some of the common issues experienced using that GameSpeed.
+[NEWLINE]
+[NEWLINE]
+[COLOR_GREEN]Select "Aeon" under Game Pace in Advanced Setup[ENDCOLOR]</Description>
+    <Authors>monju125</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="67F228733D204E642CE0A796D7ECD8A4" import="0">AeonGameSpeed/AeonChangeList.txt</File>
+    <File md5="91D250654010E997CFC675D019B2A362" import="0">AeonGameSpeed/Lua/SelectGameSpeed.lua</File>
+    <File md5="06AC817D99F7EE1C2599C60C69973F79" import="0">AeonGameSpeed/SQL/AeonGameSpeed.sql</File>
+    <File md5="ADBD73FBF462D64EF10030924A57A788" import="0">AeonGameSpeed/XML/AeonGameData.xml</File>
+    <File md5="085EC03669D052D109B13C170AD5BC9D" import="0">AeonGameSpeed/XML/AeonBNW.xml</File>
+    <File md5="0AC73FDAC77BE765658EBB7A93E1570C" import="0">AeonGameSpeed/XML/AeonGK.xml</File>
+    <File md5="A3B3688A9BAEAC753FF94CB887D1400E" import="0">AeonGameSpeed/XML/AeonVanilla.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>AeonGameSpeed/SQL/AeonGameSpeed.sql</UpdateDatabase>
+      <UpdateDatabase>AeonGameSpeed/XML/AeonGameData.xml</UpdateDatabase>
+      <UpdateDatabase>AeonGameSpeed/XML/AeonBNW.xml</UpdateDatabase>
+      <UpdateDatabase>AeonGameSpeed/XML/AeonGK.xml</UpdateDatabase>
+      <UpdateDatabase>AeonGameSpeed/XML/AeonVanilla.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/27/2015 10:48:03 AM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_EVENT_MC_OLYMPIC_GAMES">
+			<Text>Olympic Games</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MC_OLYMPIC_GAMES_DESC">
+			<Text>The greatest sporting competition in all of Greece is nearly upon us. The Olympic Games promise glory and honour for the champions and their nations. We must decide our level of involvement in this year's games.[NEWLINE]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MC_OLYMPIC_GAMES_OUTCOME_1">
+			<Text>Sponsor an athlete!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MC_OLYMPIC_GAMES_OUTCOME_2">
+			<Text>Send an envoy!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MC_OLYMPIC_GAMES_OUTCOME_3">
+			<Text>We will not participate this time.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MC_OLYMPIC_GAMES_OUTCOME_RESULT_1">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]Lose 100 gold, 75% chance the empire enters a golden age, 25% chance 1 unhappiness for {1_Num} turns[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MC_OLYMPIC_GAMES_OUTCOME_RESULT_2">
+			<Text>[ICON_BULLET][COLOR_POSITIVE_TEXT]Lose 50 gold, +2 happiness for {1_Num} turns[ENDCOLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_EVENT_MC_OLYMPIC_GAMES_OUTCOME_RESULT_3">
+			<Text>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Nothing[ENDCOLOR]</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

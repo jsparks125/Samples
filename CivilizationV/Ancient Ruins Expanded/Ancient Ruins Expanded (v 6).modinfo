@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="c09b182c-2536-469b-984b-13569da9f825" version="6">
+  <Properties>
+    <Name>Ancient Ruins Expanded</Name>
+    <Teaser>Rewrite of the Ancient Ruins system allowing for new and updated rewards</Teaser>
+    <Description>A complete rewrite of the Ancient Ruins system that adds new rewards (e.g. food, production, research) and enables unused rewards (e.g. experience, reveal resources, healing). Alters how rewards are selected and modifies certain reward amounts based on the difficulty and game speed settings. 
+[NEWLINE][NEWLINE]See AncientRuinsRewardsReadMe.txt in this mod's folder for more information.
+[NEWLINE][NEWLINE][COLOR_GREEN]Compatible with Vanilla, G&amp;K and BNW.[ENDCOLOR]</Description>
+    <Authors>monju125</Authors>
+    <SpecialThanks>All the modders at CivFanatics</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="1F4DDCD0FD2E8DF648932C0CAF37FADA" import="0">AncientRuinsExpandedReadMe.txt</File>
+    <File md5="C8F1895FC5377E9032B55E24BC74FC5A" import="0">AncientRuins/Lua/AncientRuins.lua</File>
+    <File md5="83A7534E7CFB12524C49F20CC8813246" import="0">AncientRuins/Lua/AncientRuins.xml</File>
+    <File md5="5CACAB1A02D08779496EC2F9143DD3BF" import="1">AncientRuins/Lua/ChooseGoodyHutReward.lua</File>
+    <File md5="6CDE39B739E7BA7B930D385DDFDDEF84" import="1">AncientRuins/Lua/GoodyHutPopup.lua</File>
+    <File md5="7131F2ECC4C5241D61DCE609F78F84EC" import="0">AncientRuins/SQL/GoodyDelete.sql</File>
+    <File md5="E715CA206E8D3DF446227622526178A4" import="0">AncientRuins/XML/AncientRuinsRewards.xml</File>
+    <File md5="CDCF318652629DB04EDCE7EF2F820AA4" import="0">AncientRuins/XML/HandicapInfo_AncientRuins.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>AncientRuins/SQL/GoodyDelete.sql</UpdateDatabase>
+      <UpdateDatabase>AncientRuins/XML/AncientRuinsRewards.xml</UpdateDatabase>
+      <UpdateDatabase>AncientRuins/XML/HandicapInfo_AncientRuins.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+    <EntryPoint type="InGameUIAddin" file="AncientRuins/Lua/AncientRuins.lua">
+      <Name>AncientRuins</Name>
+      <Description>AncientRuins</Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

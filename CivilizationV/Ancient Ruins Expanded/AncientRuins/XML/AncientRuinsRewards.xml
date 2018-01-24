@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 4/18/2015 7:16:16 PM -->
+<GameData>
+	<Table name="AncientRuinsRewards">
+		<Column name="ID" type="integer" primarykey="true" autoincrement="true"/>
+		<Column name="Type" type="text" unique="true"/>
+		<Column name="Description" type="text"/>
+		<Column name="ChooseDescription" type="text"/>
+		<Column name="Sound" type="text"/>
+		<Column name="Gold" type="integer" default="0"/>
+		<Column name="NumGoldRandRolls" type="integer" default="0"/>
+		<Column name="GoldRandAmount" type="integer" default="0"/>
+		<Column name="MapOffset" type="integer" default="0"/>
+		<Column name="MapRange" type="integer" default="0"/>
+		<Column name="MapProb" type="integer" default="0"/>
+		<Column name="Experience" type="integer" default="0"/>
+		<Column name="Healing" type="integer" default="0"/>
+		<Column name="DamagePrereq" type="integer" default="0"/>
+		<Column name="Food" type="integer" default="0" />
+		<Column name="Population" type="integer" default="0"/>
+		<Column name="Culture" type="integer" default="0"/>
+		<Column name="Faith" type="integer" default="0"/>
+		<Column name="ProphetPercent" type="integer" default="0"/>
+		<Column name="RevealNearbyBarbariansRange" type="integer" default="0"/>
+		<Column name="Tech" type="boolean" default="false"/>
+		<Column name="Science" type="integer" default="0" />
+		<Column name="Production" type="integer" default="0" />
+		<Column name="RevealUnknownResource" type="boolean" default="false"/>
+		<Column name="UpgradeUnit" type="boolean" default="false"/>
+		<Column name="PantheonFaith" type="boolean" default="false"/>
+		<Column name="Bad" type="boolean" default="false"/>
+		<Column name="UnitClass" type="text" default="NULL"/>
+		<Column name="BarbarianUnitClass" type="text" default="NULL"/>
+		<Column name="BarbarianUnitProb" type="integer" default="0"/>
+		<Column name="MinBarbarians" type="integer" default="0"/>
+		<Column name="MaxBarbarians" type="integer" default="0"/>
+		<Column name="RevealProb" type="integer" default="0" />
+		<Column name="HandicapModifier" type="integer" default="0" />
+		<Column name="GamespeedModifier" type="text" default="NULL" />
+		<Column name="Compatibility" type="text" default="Vanilla" />
+	</Table>
+	<AncientRuinsRewards>
+		<Row>
+			<ID>0</ID>
+			<Type>GOODY_WARRIOR</Type>
+			<Description>TXT_KEY_GOODY_WARRIOR</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_WARRIOR</ChooseDescription>
+			<Sound>AS2D_GOODY_WARRIOR</Sound>
+			<UnitClass>UNITCLASS_WARRIOR</UnitClass>
+		</Row>
+		<Row>
+			<Type>GOODY_POPULATION</Type>
+			<Description>TXT_KEY_GOODY_POPULATION</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_POPULATION</ChooseDescription>
+			<Sound/>
+			<Population>1</Population>
+		</Row>
+		<Row>
+			<Type>GOODY_CULTURE</Type>
+			<Description>TXT_KEY_GOODY_CULTURE</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_CULTURE</ChooseDescription>
+			<Sound/>
+			<Culture>10</Culture>
+			<HandicapModifier>1</HandicapModifier>
+			<GamespeedModifier>CulturePercent</GamespeedModifier>
+		</Row>
+		<Row>
+			<Type>GOODY_PANTHEON_FAITH</Type>
+			<Description>TXT_KEY_GOODY_FAITH</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_FAITH</ChooseDescription>
+			<Sound/>
+			<PantheonFaith>true</PantheonFaith>
+			<Compatibility>BNW</Compatibility>
+		</Row>
+		<Row>
+			<Type>GOODY_PROPHET_FAITH</Type>
+			<Description>TXT_KEY_GOODY_PROPHET_FAITH</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_PROPHET_FAITH</ChooseDescription>
+			<Sound/>
+			<ProphetPercent>33</ProphetPercent>
+			<Compatibility>BNW</Compatibility>
+		</Row>
+		<Row>
+			<Type>GOODY_REVEAL_NEARBY_BARBS</Type>
+			<Description>TXT_KEY_GOODY_REVEAL_NEARBY_BARBS</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_REVEAL_NEARBY_BARBS</ChooseDescription>
+			<Sound/>
+			<RevealNearbyBarbariansRange>10</RevealNearbyBarbariansRange>
+		</Row>
+		<Row>
+			<Type>GOODY_GOLD</Type>
+			<Description>TXT_KEY_GOODY_GOLD</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_GOLD</ChooseDescription>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<Gold>25</Gold>
+			<NumGoldRandRolls>2</NumGoldRandRolls>
+			<GoldRandAmount>11</GoldRandAmount>
+			<GamespeedModifier>GoldPercent</GamespeedModifier>
+		</Row>
+		<Row>
+			<Type>GOODY_MAP</Type>
+			<Description>TXT_KEY_GOODY_MAP</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_MAP</ChooseDescription>
+			<Sound>AS2D_GOODY_MAP</Sound>
+			<MapOffset>4</MapOffset>
+			<MapRange>4</MapRange>
+			<MapProb>80</MapProb>
+		</Row>
+		<Row>
+			<Type>GOODY_TECH</Type>
+			<Description>TXT_KEY_GOODY_TECH</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_TECH</ChooseDescription>
+			<Sound/>
+			<Tech>true</Tech>
+		</Row>
+		<Row>
+			<Type>GOODY_REVEAL_RESOURCE</Type>
+			<Description>TXT_KEY_GOODY_REVEAL_RESOURCE</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_REVEAL_RESOURCE</ChooseDescription>
+			<Sound/>
+			<RevealUnknownResource>true</RevealUnknownResource>
+		</Row>
+		<Row>
+			<Type>GOODY_UPGRADE_UNIT</Type>
+			<Description>TXT_KEY_GOODY_UPGRADE_UNIT</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_UPGRADE_UNIT</ChooseDescription>
+			<Sound/>
+			<UpgradeUnit>true</UpgradeUnit>
+		</Row>
+		<Row>
+			<Type>GOODY_BARBARIANS_WEAK</Type>
+			<Description>TXT_KEY_GOODY_BARBARIANS</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_BARBARIANS</ChooseDescription>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<Bad>true</Bad>
+			<BarbarianUnitClass>UNITCLASS_WARRIOR</BarbarianUnitClass>
+			<MinBarbarians>1</MinBarbarians>
+			<MaxBarbarians>2</MaxBarbarians>
+		</Row>
+		<Row>
+			<Type>GOODY_BARBARIANS_STRONG</Type>
+			<Description>TXT_KEY_GOODY_BARBARIANS</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_BARBARIANS</ChooseDescription>
+			<Sound>AS2D_GOODY_HOSTILE</Sound>
+			<Bad>true</Bad>
+			<BarbarianUnitClass>UNITCLASS_WARRIOR</BarbarianUnitClass>
+			<MinBarbarians>2</MinBarbarians>
+			<MaxBarbarians>5</MaxBarbarians>
+		</Row>
+		<Row>
+			<Type>GOODY_LOW_GOLD</Type>
+			<Description>TXT_KEY_GOODY_GOLD</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_GOLD</ChooseDescription>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<Gold>25</Gold>
+			<NumGoldRandRolls>2</NumGoldRandRolls>
+			<GoldRandAmount>11</GoldRandAmount>
+			<GamespeedModifier>GoldPercent</GamespeedModifier>
+		</Row>
+		<Row>
+			<Type>GOODY_HIGH_GOLD</Type>
+			<Description>TXT_KEY_GOODY_GOLD</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_GOLD</ChooseDescription>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<Gold>50</Gold>
+			<NumGoldRandRolls>5</NumGoldRandRolls>
+			<GoldRandAmount>11</GoldRandAmount>
+			<GamespeedModifier>GoldPercent</GamespeedModifier>
+		</Row>
+		<Row>
+			<Type>GOODY_SETTLER</Type>
+			<Description>TXT_KEY_GOODY_SETTLER</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_SETTLER</ChooseDescription>
+			<Sound>AS2D_GOODY_SETTLER</Sound>
+			<UnitClass>UNITCLASS_SETTLER</UnitClass>
+		</Row>
+		<Row>
+			<Type>GOODY_SCOUT</Type>
+			<Description>TXT_KEY_GOODY_SCOUT</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_SCOUT</ChooseDescription>
+			<Sound>AS2D_GOODY_SCOUT</Sound>
+			<UnitClass>UNITCLASS_SCOUT</UnitClass>
+		</Row>
+		<Row>
+			<Type>GOODY_WORKER</Type>
+			<Description>TXT_KEY_GOODY_WORKER</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_WORKER</ChooseDescription>
+			<Sound>AS2D_GOODY_WORKER</Sound>
+			<UnitClass>UNITCLASS_WORKER</UnitClass>
+		</Row>
+		<Row>
+			<Type>GOODY_EXPERIENCE</Type>
+			<Description>TXT_KEY_GOODY_EXPERIENCE</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_EXPERIENCE</ChooseDescription>
+			<Sound>AS2D_GOODY_XP</Sound>
+			<Experience>10</Experience>
+			<HandicapModifier>1</HandicapModifier>
+		</Row>
+		<Row>
+			<Type>GOODY_HEALING</Type>
+			<Description>TXT_KEY_GOODY_HEALING</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_HEALING</ChooseDescription>
+			<Sound>AS2D_GOODY_HEAL</Sound>
+			<Healing>100</Healing>
+			<DamagePrereq>60</DamagePrereq>
+		</Row>
+		<Row>
+			<Type>GOODY_FOOD</Type>
+			<Description>TXT_KEY_GOODY_FOOD</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_FOOD</ChooseDescription>
+			<Sound/>
+			<Food>10</Food>
+			<HandicapModifier>1</HandicapModifier>
+			<GamespeedModifier>GrowthPercent</GamespeedModifier>
+		</Row>
+		<Row>
+			<Type>GOODY_SCIENCE</Type>
+			<Description>TXT_KEY_GOODY_SCIENCE</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_SCIENCE</ChooseDescription>
+			<Sound/>
+			<Science>10</Science>
+			<HandicapModifier>1</HandicapModifier>
+			<GamespeedModifier>ResearchPercent</GamespeedModifier>
+		</Row>
+		<Row>
+			<Type>GOODY_PRODUCTION</Type>
+			<Description>TXT_KEY_GOODY_PRODUCTION</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_PRODUCTION</ChooseDescription>
+			<Sound/>
+			<Production>5</Production>
+			<HandicapModifier>1</HandicapModifier>
+			<GamespeedModifier>ConstructPercent</GamespeedModifier>
+		</Row>
+		<Row>
+			<Type>GOODY_FAITH</Type>
+			<Description>TXT_KEY_GOODY_FAITH</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_FAITH</ChooseDescription>
+			<Sound/>
+			<Faith>10</Faith>
+			<HandicapModifier>1</HandicapModifier>
+			<GamespeedModifier>FaithPercent</GamespeedModifier>
+			<Compatibility>BNW</Compatibility>
+		</Row>
+		<Row>
+			<Type>GOODY_REVEAL_RUINS</Type>
+			<Description>TXT_KEY_GOODY_REVEAL_RUINS</Description>
+			<ChooseDescription>TXT_KEY_GOODY_CHOOSE_REVEAL_RUINS</ChooseDescription>
+			<Sound />
+			<RevealProb>50</RevealProb>
+		</Row>
+	</AncientRuinsRewards>
+
+	<Language_en_US>
+		<Row Tag="TXT_KEY_GOODY_FOOD">
+			<Text>You find survivors among the rubble! In gratitude, they join your capital, speeding up its growth by {1_NUM} [ICON_FOOD].</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GOODY_CHOOSE_FOOD">
+			<Text>Convince the remaining population to join your city.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GOODY_SCIENCE">
+			<Text>You find artifacts of an advanced technology, furthering your progress towards research of {2_TechName} by {1_NUM} [ICON_RESEARCH]! </Text>
+		</Row>
+		<Row Tag="TXT_KEY_GOODY_CHOOSE_SCIENCE">
+			<Text>Study their artifacts to progress your research.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GOODY_PRODUCTION">
+			<Text>You find survivors among the rubble who agree to travel to your capital to work on your current construction project![NEWLINE][NEWLINE]({1_NUM} [ICON_PRODUCTION] towards {2_Building})</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GOODY_CHOOSE_PRODUCTION">
+			<Text>Convince the remaining population to work for you.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GOODY_REVEAL_RUINS">
+			<Text>You find a map showing the locations of other ancient civilizations!</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GOODY_CHOOSE_REVEAL_RUINS">
+			<Text>Study their maps to discover other ancient civilizations.</Text>
+		</Row>
+		<Delete Tag="TXT_KEY_GOODY_CHOOSE_REVEAL_RESOURCE" />
+		<Row Tag="TXT_KEY_GOODY_CHOOSE_REVEAL_RESOURCE">
+			<Text>Ask for directions to a nearby resource.</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

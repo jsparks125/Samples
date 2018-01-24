@@ -1,0 +1,180 @@
+GameSpeed settings:
+	Deal duration - 45
+	Growth - 300
+	Train - 75
+	Construct - 75
+	Create - 300
+	Research - 100
+	Gold - 300
+	Gold gift - 75
+	Build - 75
+	Improvement - 300
+	Great people - 150
+	Culture - 400
+	Faith - 300
+	Barb - 300
+	Feature production - 300
+	Unit discover - 300
+	Unit hurry - 300
+	Trade - 300
+	Golden age - 200
+	Hurry - 300
+	Religion pressure - 10
+	Victory delay - 300
+	Minor civ election frequency - 200
+	Opinion duration - 100
+	Spy rate - 200
+	Peace deal duration - 20
+	Relationship duration - 100
+	League - 100
+
+World Wonders production cost - 2x (makes Construct 150 for WWs)
+
+Building and unit production cost increased every 2 eras:
+Medieval/Renaissance - 1.25x
+Industrial/Modern - 1.5x
+Atomic/Future - 1.75x
+
+Wealth process moved to Mining and set to 10%
+Research process moved to Writing and set to 10%
+
+Supply free units:
+	Settler - 65
+	Chieftain - 60
+	Warlord - 55
+	Prince - 50
+	King - 45
+	Emperor - 40
+	Immortal - 35
+	Deity - 30
+	AI - 25
+
+Supply per city:
+	Settler - 8
+	Chieftain - 7
+	Warlord - 6
+	Prince, King, Emperor, Immortal, Deity, AI - 5
+
+Supply per population percent:
+	Settler, Chieftain - 50
+	Warlord, Prince, AI - 25
+	King, Emperor, Immortal, Deity - 10
+
+AI additional supply modifier percent:
+	Settler - 0
+	Chieftain - 10
+	Warlord - 20
+	Prince, AI - 50
+	King - 75
+	Emperor, Immortal, Deity - 100
+
+AI unit maintenance cost percent:
+	Settler, Chieftain - 80
+	Warlord, Prince, AI - 75
+	King - 70
+	Emperor - 65
+	Immortal - 60
+	Deity - 55
+
+Gold free units:
+	Settler, Chieftain, Warlord - 50
+	Prince, AI - 40
+	King - 30
+	Emperor, Immortal, Deity - 25
+
+Unit maintenance settings:
+	Base unit cost - 75
+	Multiplier - 3
+	Divisor - 20
+
+Tech costs:
+	Ancient, first tier - 2.5x
+	Ancient, second tier - 5.25x
+	Classical - 7x
+	Medieval - 7.5x
+	Renaissance - 5.5x
+	Industrial - 5x
+	Modern - 4.5x
+	Atomic - 4.5x
+	Information - 3.5x
+
+Advanced start percentage settings:
+Research
+	All eras - 100
+Growth
+	Classical - 60
+	Medieval - 50
+	Renaissance - 40
+	Industrial - 30
+	Modern - 20
+	Atomic - 10
+	Information - 5
+
+Science building changes:
+	Library, Public School, Paper Maker, Royal Library - 1 science for every 4 citizens
+	Observatory, Laboratory, University, Wat - 25%
+	Public School - 1 science yield
+	Laboratory - 2 science yield
+
+Various science changes:
+	Academy yield - 4
+	Academy tech improvements - 1
+	Secularism yield - 1
+	Free Thought yield modifier - 5
+	Worker's Faculties yield modifier - 10
+	Humanism great scientist modifier - 10
+	Rationalism happiness to science percent - 5
+	Puppet science modifier - -10
+	Trait improvement science yield - 1
+	Trait specialist science yield - 1
+	Tech cost mod for number of cities lowered by 1.5
+	Research lab requires 1 aluminum
+
+AI settings changes:
+	All warmonger hate - -5 (minimum 1)
+	All forgiveness - +5 (maximum 12)
+	All denounce willingness - -5 (minimum 1)
+	All major civ approach hostile - -5 (minimum 1)
+
+Flavor changes:
+	Ashurbanipal offense - 8
+	Isabella and Napoleon offense - 7
+	Maria I offense - 6
+	Elizabeth, William offense - 4
+	Darius, Dandolo, Hiawatha defense - 8
+	Elizabeth, Gandhi, Harun, Pedro, Ramesses, William defense - 7
+	Maria I defense - 6
+	Napoleon defense - 4
+
+	All civs defense, offense, military training - 2x
+
+	Minor civ offense, defense, city defense - 1
+	Minor civ general defense (defense) - 1
+	Minor civ general defense (city defense) - 2
+	Minor civ threat elevated (defense) - 2
+	Minor civ threat elevated (city defense) - 3
+	Minor civ threat critical (offense) - 4
+	Minor civ threat critical (defense) - 5
+	Minor civ threat critical (city defense) - 6
+	
+AI military defines:
+	Land units per city - 4
+	Naval units per city - .5
+	Units to defend capital - 8
+
+AI city strategies:
+	Enough tile improvers - 50
+	Need tile improvers - 100
+	Want tile improvers - 67
+
+Unhappiness defines:
+	Unhappiness per captured city - 4
+	Unhappiness per occupied population - 1.25
+
+Faith settings:
+	First pantheon - 20
+	First prophet - 400
+	First great person - 2000
+	Delta next prophet - 200
+	Delta next great person - 750
+	Missionary and Inquisitor faith cost - 500

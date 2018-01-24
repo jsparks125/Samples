@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 8/26/2015 4:47:55 PM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag ="TXT_KEY_DECISIONS_MC_SPARTA_CALLTOWAR_NAME">
+			<Text>Call the Greeks to War!</Text>
+		</Row>
+		<Row Tag ="TXT_KEY_DECISIONS_MC_SPARTA_CALLTOWAR_DESC">
+			<Text>
+				A Prince from the nation of {1_Name}, your accursed foes, has stolen your beloved wife from your palace, taking her to the capital of the empire. Such a deed must not go unpunished, and must be met with a show of force from all the Greek states!
+				[NEWLINE]Requirements/Restrictions:
+				[NEWLINE][ICON_BULLET]Player must be Sparta
+				[NEWLINE][ICON_BULLET]Must be at war with {1_Name}
+				[NEWLINE][ICON_BULLET]Must be friends with or able to extract tribute from at least one minor civ with a capital
+				[NEWLINE]Costs:
+				[NEWLINE][ICON_BULLET]200 [ICON_GOLD]
+				[NEWLINE][ICON_BULLET]2 [ICON_MAGISTRATES]
+				[NEWLINE]Rewards:
+				[NEWLINE][ICON_BULLET]1 Military unit from every city state with whom you are either at least friendly or are able to extract tribute
+			</Text>
+		</Row>
+		<Row Tag ="TXT_KEY_DECISIONS_MC_SPARTA_CALLTOWAR_ADOPTED">
+			<Text>
+				A Prince from the nation of {1_Name}, your accursed foes, has stolen your beloved wife from your palace, taking her to the capital of the empire. Such a deed must not go unpunished, and must be met with a show of force from all the Greek states!
+				[NEWLINE][NEWLINE]Rewards:
+				[NEWLINE][ICON_BULLET]1 Military unit from every city state with whom you are either at least friendly or are able to extract tribute
+			</Text>
+		</Row>
+	</Language_en_US>
+</GameData>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="7a3badcb-7d07-4e6f-8cef-645612bfa063" version="1">
+  <Properties>
+    <Name>Decisions</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Decisions</Teaser>
+    <Description>Decisions</Description>
+    <Authors>monju125</Authors>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>0</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="414FE5BE313C464EE915DE76DD30FB8F" import="0">Greece/OlympicGameEvents.sql</File>
+    <File md5="E9AA1FF4E82B21F898AA516E2739BAB9" import="1">Greece/OlympicGamesEvent.lua</File>
+    <File md5="F3D61162F9B4BA349E810DD63DB3C564" import="0">Greece/OlympicGamesEvent.xml</File>
+    <File md5="F24EA625501CC352F0B898B391C19010" import="0">Greece/SpartaDecisions.sql</File>
+    <File md5="5CCD5DAAE6D124FBB24635057AB6731C" import="0">Greece/SpartaDecisions.xml</File>
+    <File md5="5D4F3B18BB04FCBAC14243B6ED4A653B" import="1">Greece/SpartaDecisions.lua</File>
+    <File md5="86C1C3EDCE4699DE320A932C4E70E22C" import="0">Nubia/CityInfoStack/CityInfoStack.lua</File>
+    <File md5="120EB71025973A8A48B38314241DD0B3" import="0">Nubia/CityInfoStack/CityInfoStack.xml</File>
+    <File md5="2CFFECDA2E21D095E3812A69A131ED76" import="0">Nubia/CityInfoStack/NubiaAmunCityInfo.lua</File>
+    <File md5="EE2ADF7947E094E4E955CE2E413FE5AA" import="0">Nubia/CityInfoStack/NubiaAmunCityInfo.xml</File>
+    <File md5="B2D3EA31235BCDEA777E059C1AD039A6" import="0">Nubia/CityInfoStack/NubiaMeroeCityInfo.lua</File>
+    <File md5="4EA6805DDDE0727A8AB9A943AAFEF666" import="0">Nubia/CityInfoStack/NubiaMeroeCityInfo.xml</File>
+    <File md5="2AF6F528380BF3CB77E490CBD57CF81C" import="0">Nubia/NubiaDecisions.lua</File>
+    <File md5="ECE6B2610FF8C43BFC68BFCB6F7700C5" import="0">Nubia/NubiaDecisions.sql</File>
+    <File md5="F086F363852EF827CA941F17E35D733A" import="0">Nubia/NubiaDecisions.xml</File>
+    <File md5="C0F87908C33B5975EAFE725413A3E3F8" import="0">Nubia/temp.xml</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>Greece/SpartaDecisions.xml</UpdateDatabase>
+      <UpdateDatabase>Greece/SpartaDecisions.sql</UpdateDatabase>
+      <UpdateDatabase>Greece/OlympicGameEvents.sql</UpdateDatabase>
+      <UpdateDatabase>Greece/OlympicGamesEvent.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>

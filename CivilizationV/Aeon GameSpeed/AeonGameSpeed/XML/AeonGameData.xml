@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 6/11/2015 9:35:10 AM -->
+<GameData>
+	<Language_en_US>
+		<Row Tag="TXT_KEY_GAMESPEED_AEON">
+			<Text>Aeon</Text>
+		</Row>
+		<Row Tag="TXT_KEY_GAMESPEED_AEON_HELP">
+			<Text>This extremely long gamespeed allows for longer, equal length eras but has reduced building/unit costs to allow for more warfare throughout the game.</Text>
+		</Row>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_ROYAL_LIBRARY_HELP" />
+			<Set>
+				<Text>Unique Assyrian Library replacement. +1 [ICON_RESEARCH] Science for every 4 [ICON_CITIZEN] Citizens in this City. Also has a slot for a Great Work of Writing which, when filled, gives extra XP to trained Units.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_LIBRARY_HELP" />
+			<Set>
+				<Text>+1 [ICON_RESEARCH] Science for every 4 [ICON_CITIZEN] Citizens in this City.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_PUBLIC_SCHOOL_HELP" />
+			<Set>
+				<Text>+1 [ICON_RESEARCH] Science for every 4 [ICON_CITIZEN] Citizens in this City.[NEWLINE][NEWLINE]City must have a Uiversity.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_BUILDING_PAPER_MAKER_HELP" />
+			<Set>
+				<Text>+1 [ICON_RESEARCH] Science for every 4 [ICON_CITIZEN] Citizens in this City. +2[ICON_GOLD] Gold.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_SECULARISM_HELP" />
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Secularism[ENDCOLOR][NEWLINE]+1 [ICON_RESEARCH] Science from every Specialist.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_FREE_THOUGHT_HELP" />
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Free Thought[ENDCOLOR][NEWLINE]+1 [ICON_RESEARCH] Science from every Trading Post and +10% [ICON_RESEARCH] Science from Universities.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_WORKERS_FACULTIES_HELP" />
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Workers' Faculties[ENDCOLOR][NEWLINE]Factories increase a City's [ICON_RESEARCH] Science output by 15%. Build Factories in half the usual time.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_POLICY_HUMANISM_HELP" />
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Humanism[ENDCOLOR][NEWLINE]Great Scientists are earned 20% faster.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROCESS_WEALTH_HELP" />
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Wealth[ENDCOLOR] converts 10% of the [ICON_PRODUCTION] Production of this City into [ICON_GOLD] Gold.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_PROCESS_RESEARCH_HELP" />
+			<Set>
+				<Text>[COLOR_POSITIVE_TEXT]Research[ENDCOLOR] converts 10% of the [ICON_PRODUCTION] Production of this City into [ICON_RESEARCH] Science.</Text>
+			</Set>
+		</Update>
+		<Update>
+			<Where Tag="TXT_KEY_TRAIT_SCHOLARS_JADE_HALL" />
+			<Set>
+				<Text>+1 [ICON_RESEARCH] science for all specialists and for all Great Person tile improvements. Receive a tech boost each time a scientific building/Wonder is built in the Korean capital.</Text>
+			</Set>
+		</Update>
+	</Language_en_US>
+
+	<Building_ResourceQuantityRequirements>
+		<Row>
+			<BuildingType>BUILDING_LABORATORY</BuildingType>
+			<ResourceType>RESOURCE_ALUMINUM</ResourceType>
+			<Cost>1</Cost>
+		</Row>
+	</Building_ResourceQuantityRequirements>
+</GameData>
