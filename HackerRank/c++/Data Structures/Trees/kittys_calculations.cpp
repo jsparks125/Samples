@@ -66,7 +66,7 @@ struct subtree
 
 std::unordered_map<int, node> nodes;
 
-int KittyCalculations()
+int KittysCalculations()
 {
 	int num_nodes, num_sets;
 	std::cin >> num_nodes >> num_sets;
@@ -163,7 +163,7 @@ int KittyCalculations()
 				}
 
 				//Check all of the roots at the current level to see if they have a common ancestor or if their parent exists at the next level
-				//If so, they can be combined.
+				//If so, they can be combined
 				for (auto root_iter = process_roots->second.begin(); root_iter != process_roots->second.end(); ++root_iter)
 				{
 					node current_node = root_iter->second;
@@ -195,7 +195,7 @@ int KittyCalculations()
 						auto current_iter = subtrees.find(current_node.value);
 						if (current_iter != subtrees.end())
 						{
-							subtree *current_subtree = &current_iter->second;
+							subtree* current_subtree = &current_iter->second;
 							int current_index = current_subtree->next_calc_depth - (j - 1);
 							unsigned long long new_sum = next_calc * (current_subtree->next_sum);
 							unsigned long long current_product = current_subtree->next_calc + (current_subtree->next_sum * uint64_t(current_index)) % 1000000007;
