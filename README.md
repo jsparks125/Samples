@@ -11,8 +11,6 @@ I've added three files to the root of this folder to highlight them:
 
 Also contains the following folders:
 
-# Civilization V
-Contains the mods I've [published](http://steamcommunity.com/id/monju125/myworkshopfiles/?appid=8930) under my own username for Civ V. These are in Aeon Gamespeed, Ancient Ruins Expanded, and Total War. Also contains work I've contributed to other people's mods in the Decisions folder
+* Civilization V - Contains the mods I've [published](http://steamcommunity.com/id/monju125/myworkshopfiles/?appid=8930) under my own username for Civ V. These are in Aeon Gamespeed, Ancient Ruins Expanded, and Total War. Also contains work I've contributed to other people's mods in the Decisions folder
 
-# HackerRank/c++
-A selection of the higher difficulty HackerRank challenges I've completed in C++
+* HackerRank/c++ - A selection of the higher difficulty HackerRank challenges I've completed in C++
