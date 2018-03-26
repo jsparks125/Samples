@@ -15,4 +15,4 @@ Also contains the following folders:
 
 * HackerRank/c++ - A selection of the higher difficulty HackerRank challenges I've completed in C++
 
-* HTN - The current work in progress version of my hierachical task network. Currently exists without documentation, which it desparately requires, but I will be rewriting it shortly to upgrade it to C++17 and move the plan functions into Lua instead of requiring them to be defined at compile time, so documentation is on the backburner. It's mostly for my own usage at the moment anyway, but is provided largely to show that I'm not a liar and have actually written my own hierarcical task network.
+* HTN - The current work in progress version of my hierachical task network. Currently exists without documentation, which it desperately requires, but I will be rewriting it shortly to upgrade it to C++17 and move the plan functions into Lua instead of requiring them to be defined at compile time, so documentation is on the backburner. It's mostly for my own usage at the moment anyway, but is provided largely to show that I'm not a liar and have actually written my own hierarchical task network
