@@ -4,7 +4,7 @@ I've added three files to the root of this folder to highlight them:
 )
 
 * kittys_calculations.cpp - My 100% passing, original solution to one of the most difficult [challenges on HackerRank](https://www.hackerrank.com/challenges/kittys-calculations-on-a-tree/problem
-). Only 7% of the 750 people who have submitted a solution have fully passed, so I'm fairly proud of this one
+). Only 10% of the 920 people who have submitted a solution have fully passed, so I'm fairly proud of this one
 
 * samples.cpp - A simple example of OOP best practices in C++. Provided mostly just to fill a gap not shown in my other samples
 
